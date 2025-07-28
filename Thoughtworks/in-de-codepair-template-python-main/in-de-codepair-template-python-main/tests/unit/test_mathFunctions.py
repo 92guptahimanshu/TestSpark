@@ -3,6 +3,7 @@ import pytest
 from functions.mathFunctions import cube_method
 from functions.mathFunctions import square_method
 from functions.mathFunctions import sum_method
+from functions.sparkfunctions import addone
 
 def test_square_method():
     assert square_method(2) == 4
@@ -15,3 +16,6 @@ def test_cube_method():
 #TODO: Correct the Assertion Logic
 def test_sum_method():
     assert sum_method(2,4) == 6
+
+def test_addone():
+    assert addone("100.00")=="101.00"
